@@ -1,3 +1,3 @@
 # Curs Git
 
-Aceste este cursul de git
+Acesta este cursul de git
