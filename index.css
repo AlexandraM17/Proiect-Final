@@ -77,6 +77,7 @@ nav ul li a {
 
 nav ul li a:hover {
    font-size: 1.2em;
+   color: #707070;
 }
 
 #logo {
@@ -327,9 +328,9 @@ input[type="checkbox"] {
     font-size: 15px;
     cursor: pointer;
     margin: 20px 22px;  
-  }
+}
 
-  input[type="checkbox"]:checked ~ div {
+input[type="checkbox"]:checked ~ div {
     color: rgb(69, 172, 102);
     text-shadow: 0 0 15px rgb(30, 90, 68), 0 0 25px rgb(46, 156, 92);
     animation: glow 1.5s linear infinite;
@@ -353,21 +354,28 @@ input[type="checkbox"] {
 }
 
 .produs img {
-    box-shadow: 20px 20px 60px #707070;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 40px;
-    border-radius: 50%;
-    animation-name: rotire_imagine;
-    animation-iteration-count: infinite;
-    animation-timing-function: 5s;
-    animation-duration: 4s;
+    --s: 150px;
+    --b: 8px;     
+    --g: 14px;    
+    --c: #646464;
+    border-radius: 50%; 
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .produs img:hover {
-    transition: transform 1s;
-    transform: scale(1.1);
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+  
+img + img {
+    border-radius: 50%;
 }
+
 
 .descriere {
     color: black;
@@ -378,16 +386,15 @@ input[type="checkbox"] {
     font-weight: bold;
     font-size: 19px;
     letter-spacing: 0.9px;
-    margin-top: 30px;
+    margin-top: 80px;
     transition: font-size 1s;
 }
 
+.produs a {
+    margin-top: 40px;
+}
 .produs a:link {
     text-decoration: none;
-}
-
-.descriere:hover {
-    font-size: 21px;
 }
 
 footer {
@@ -455,6 +462,7 @@ footer {
     font-size: 15px;
     text-align: center;
 }
+
 
 @keyframes titlu_h1 {
     0% {
