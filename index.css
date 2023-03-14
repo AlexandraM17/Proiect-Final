@@ -19,10 +19,10 @@ body {
 
 .top_bar {
     color: black;
-    background-image: url(images/navbar.png);
-    background-repeat: repeat-x;
     background-size: 220px;
     padding: 0 30px;
+    background-image: url(images/navbar.png);
+    background-repeat: repeat-x;
     filter: grayscale(100%);
 }
 
@@ -37,13 +37,14 @@ body {
     justify-content: space-between;
 }
 
-ul {
-    display: flex;
+.top_bar_telefon, ul {
+    margin: 0;
     gap: 10px;
     list-style-type: none;
-    margin: 0;
-    align-items: center;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #phone {
@@ -56,11 +57,11 @@ nav {
 }
 
 nav ul {
+    gap: 5px;
+    margin-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 5px;
-    margin-right: 5%;
 }
 
 nav ul li {
@@ -68,16 +69,17 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #137547;
     font-family: 'Anton', sans-serif;
     font-size: 1em;
-    color: #137547;
     text-decoration: none;
     transition: font-size 1s;
 }
 
 nav ul li a:hover {
-   font-size: 1.2em;
-   color: #707070;
+    color: #707070;
+    font-size: 1.2em;
+   
 }
 
 #logo {
@@ -98,10 +100,10 @@ section {
 } 
 
 .sectiune_titlu_pagina {
+    position: relative;
     display: flex;
     flex-direction:column;
     align-items:center;
-    position: relative;
 }
 
 .background_titlu_pagina {
@@ -117,21 +119,21 @@ section {
 }
 
 .sectiune_titlu_pagina h1 {
+    color: white;
+    font-size: 90px;
+    text-align: center;
     margin-top: -20px;
     margin: 85px 0 0 0;
-    text-align: center;
-    font-size: 90px;
-    color: white;
     animation-name: titlu_h1;
     animation-duration: 2s;
 }
 
 .sectiune_titlu_pagina h4 {
+    color: white;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
     text-align: center;
-    color: white;
-    font-size: 25px;
     margin-bottom: 5%;
     opacity: 75%;
     animation-name: flip;
@@ -146,22 +148,22 @@ section {
 }
 
 #btn {
+    color: white;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
     background: transparent;
     padding: 10px 50px;
     margin-top: 17px;
     min-width: 150px;
     border: none;
     border-radius: 30px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Cookie', cursive;
     position: relative;
-    transition: 1s;
-    -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: 1s;
 }
 
 #btn a {
@@ -175,11 +177,11 @@ section {
 #btn #circle {
     width: 5px;
     height: 5px;
+    top: 0;
+    left: 50%;
     background: transparent;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 50%;
     overflow: hidden;
     transition: 500ms;
 }
@@ -228,26 +230,26 @@ section {
 }
 
 .linie_orizontala img {
-    margin: 10px;
     width: 30px;
     height: 30px;
+    margin: 10px;
 }
 
 .despre_noi {
+    width: 750px;
+    height: 500px;
     padding-top: 110px;
     padding-bottom: 100px;
     display: flex;
-    height: 500px;
     margin: 0 auto;
-    width: 750px;
 }
 
 .despre_noi_imagini {
+    color: #F1F1F2;
+    width: 70%;
+    position: relative;
     border-radius: 0 20px 20px 0;
     box-shadow: 0px 0px 40px 20px rgba(0,0,0,0.22);
-    color: #F1F1F2;
-    position: relative;
-    width: 70%;
 }
 
 
@@ -257,39 +259,39 @@ section {
 }
 
 .despre_noi_informatii {
+    width: 50%;
+    height: calc(100% - 70px);
+    top: 40px;
+    position: relative;
     box-shadow: 0 8px 32px 0 rgba(18, 31, 59, 0.37);
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 20px 0 0 20px;
-    height: calc(100% - 70px);
-    top: 40px;
-    position: relative;
-    width: 50%;
 }
 
 .despre_noi_informatii p {
-    display: flex;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
     height: 10px;
     width: 300px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
     word-spacing: 3px;
-    text-align: center;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    align-content: flex-start;   
+    opacity: 60%;
     padding-top: 70px;
     padding-bottom: 190px;
     padding-left: 40px;
     padding-right: 60px;
-    font-size: 17px;
-    opacity: 60%;
+    display: flex;
+    text-align: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: flex-start;   
 }
 
 
 .despre_noi a {
-    font-weight: bold;
-    color: black;    
+    color: black;
+    font-weight: bold;   
     text-decoration: none;
 } 
 
@@ -309,11 +311,11 @@ section {
   
 
 input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
     height: 20px;
     width: 20px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
     z-index: 100;
   }
   
@@ -322,25 +324,25 @@ input[type="checkbox"] {
     height: 30px;
     width: 330px;
     color: #555;
+    font-size: 15px;
+    margin: 20px 22px; 
     display: flex;
     align-items: center;
-    font-size: 15px;
-    cursor: pointer;
-    margin: 20px 22px;  
+    cursor: pointer; 
 }
 
-input[type="checkbox"]:checked ~ div {
+input[type="checkbox"] ~ div {
     color: rgb(69, 172, 102);
     text-shadow: 0 0 15px rgb(30, 90, 68), 0 0 25px rgb(46, 156, 92);
     animation: glow 1.5s linear infinite;
 }
   
 .prezentare_produse {
+    margin-top: 150px;
+    gap: 12%;
     display: flex;
     flex-direction: row;
-    gap: 12%;
     justify-content: center;
-    margin-top: 150px;
     
 }
 
@@ -361,7 +363,6 @@ input[type="checkbox"]:checked ~ div {
     aspect-ratio: 1;
     outline: calc(var(--s)/2) solid #0009;
     outline-offset: calc(var(--s)/-2);
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -376,14 +377,14 @@ img + img {
 
 .descriere_produs {
     color: black;
-    opacity: 60%;
+    font-size: 19px;
+    font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
     text-align-last: center;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 19px;
     letter-spacing: 0.9px;
     margin-top: 80px;
+    opacity: 60%;
     transition: font-size 1s;
 }
 
@@ -412,13 +413,13 @@ footer {
 }
 
 .titlu_facebook_footer {
-    padding: 20px 20px;
     font-size: 25px;
+    padding: 20px 20px;
 }
 
 .titlu_contact_footer{
-    padding: 20px 20px;
     font-size: 25px;
+    padding: 20px 20px;
 }
 
 .urmareste_footer {
@@ -427,10 +428,10 @@ footer {
 }
 
 .urmareste_footer img {
-    padding-top: 7px;
-    padding-left: 35px;
     width: 55px;
     height: 55px;
+    padding-top: 7px;
+    padding-left: 35px;
 }
 
 .contact_footer img {
@@ -457,8 +458,8 @@ footer {
 }
 
 .copy {
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
     text-align: center;
 }
 
