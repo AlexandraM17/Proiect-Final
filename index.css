@@ -314,7 +314,6 @@ input[type="checkbox"] {
     height: 20px;
     width: 20px;
     position: absolute;
-    cursor: pointer;
     opacity: 0;
     z-index: 100;
   }
@@ -328,7 +327,6 @@ input[type="checkbox"] {
     margin: 20px 22px; 
     display: flex;
     align-items: center;
-    cursor: pointer; 
 }
 
 input[type="checkbox"] ~ div {
