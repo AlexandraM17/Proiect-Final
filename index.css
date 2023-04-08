@@ -77,7 +77,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #707070;
+    color: #ffa01cda;
     font-size: 1.2em;
    
 }
@@ -197,7 +197,6 @@ section {
 
 #btn:hover {
     background: rgb(128, 128, 128, 0.6);
-
 }
 
 #btn:hover #circle {
@@ -214,8 +213,7 @@ section {
 }
 
 .sectiune_prezentare_pagina h3 {
-    color: black;
-    opacity: 60%;
+    color: #ffa01ce7;
     font-size: 40px;
     text-align: center;
     margin-top: 100px;
@@ -322,7 +320,7 @@ input[type="checkbox"] {
     position: relative;
     height: 30px;
     width: 330px;
-    color: #555;
+    color: #555555;
     font-size: 15px;
     margin: 20px 22px; 
     display: flex;
@@ -355,7 +353,7 @@ input[type="checkbox"] ~ div {
     --s: 150px;
     --b: 8px;     
     --g: 14px;    
-    --c: #484747;
+    --c: #ffa01cda;
     border-radius: 50%; 
     width: var(--s);
     aspect-ratio: 1;
