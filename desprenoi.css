@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
@@ -387,7 +387,7 @@ main {
     justify-content: space-between;
     align-items: baseline;
     padding: 0 180px;
-    gap: 150px;
+    gap: 200px;
 }
 
 
@@ -404,11 +404,12 @@ main {
 }
 
 .c_box p {
+    text-align: justify;
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     letter-spacing: 1px;
-    word-spacing: 1px;
+    /* word-spacing: 1px; */
     /* color: #137547; */
     font-size: 15px;
 }

@@ -8,6 +8,196 @@
     <title>Catalog</title>
 </head>
 <body>
-    <p>Titlu</p>
+    <header class="header">
+        <div class="top_bar">
+          <div class="nume_si_telefon">
+              <p>Horti Man Crops</p>
+            <div class="top_bar_telefon">
+                  <img src="images/phone.png" alt="phone" id="phone">
+                  <p class="telefon">0750 647 234</p>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul> 
+            <li>
+              <a href="/index.html">ACASĂ</a>
+            </li>
+            <li>
+              <a href="/desprenoi.html">DESPRE NOI</a>
+            </li>
+            <li>
+              <a href="/index.html"><img src="images/logo.jpeg" alt="logo" id="logo"/></a>
+            </li>
+            <li>
+              <a href="/catalog.html">CATALOG</a>
+            </li>
+            <li>
+              <a href="/contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header> 
+      <main>
+        <section class="prezentare_catalog">
+          <div class="box_ct">
+            <div class="box">
+              <div class="box_section">
+                <div class="bg_principal">
+                  <!-- <img src="images/catalog_img.jpg" alt="catalog img"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container_prezentare_catalog">
+            <div class="info_prezentare_catalog">
+              <div>
+                <h3 class="slides">De ce avem nevoie 
+                  <br>
+                    de 
+                  <br>
+                  <span style="color: #ffa01cda">plante altoite</span>?
+                </h3>
+                <p class="slides">
+                  <span style=" font-size: 27px; color: black;">De ce avem nevoie de <span style="color:#ffa01cda">plante altoite</span>?</span><br>
+                  <br><br>
+                   Răsadurile altoite sunt rezistente la dăunatori, boli ale solului şi insecte.
+                   Prin folosirea răsadurilor altoite de pepeni va fi înlăturat riscul îmbolnăvirii cu Fusarium Oxisporum, 
+                  putându-se practica monocultura o perioada îndelungată (cel puțin 8-10 ani) pe același sol.<br>
+                  <br>
+                   Din moment ce răsadurile sunt mai puternice, rădăcina port-altoi va hrăni planta mai bine decât rădăcina normală.
+                   Ele sunt mai economice în condiţiile în care sunt folosite mai puţine substanţe chimice împotriva bolilor de sol. <br>
+                  <br>
+                   Rădăcina port-altoi menține apa și absoarbe elementele din sol mai bine decât rădăcina normală a plantei chiar și la temperaturi scăzute.
+                   Răsadurile altoite dau rezultate mult mai bune decât răsadurile obişnuite chiar şi în condiţii nefavorabile.<br>
+                </p>
+              </div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+          </div>
+            <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+              }
+            </script>
+            <img class="img_prezentare_catalog" src="images/despre_noi_1.jpeg" alt="imagine catalog">
+          </div>
+        </section>
+        <section class="prezentare_produse_catalog">
+          <div class="container_produse">
+            <div class="produse_catalog">
+              <div class="items">
+                <!-- <div class="item_1">
+                  <div class="img_item">
+                    <img class="img_item" src="images/ce_ne_recomanda.jpeg" alt="pepene verde">
+                  </div>
+                  <div class="box_item">
+                    <p class="p1_box_item">Răsad altoit</p>
+                    <h3>Pepene Verde</h3>
+                    <p class="p2_box_item">fhcd</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 </body>
+<script>
+  fetch('data.json')
+  .then((data) => data.json())
+  .then(data => createItemCard(data))
+  .catch((err) => console.log(err));
+
+  function createItemCard(data) {
+    const zone = document.getElementsByClassName('items')[0];
+    for(let i = 0; i < data.length; i++) {
+      const item = document.createElement('div');
+      item.innerHTML = `<div class="item_1">
+                  <div class="img_item">
+                    <img class="img_item" src=${data[i].imagine} alt="rasad">
+                  </div>
+                  <div class="box_item">
+                    <p class="p1_box_item">${data[i].produs}</p>
+                    <h3>${data[i].nume}</h3>
+                    <p class="p2_box_item">${data[i].descriere}</p>
+                  </div>
+                </div>`;
+                zone.appendChild(item);
+    }
+  }
+</script>
+<footer>
+  <div class="sectiune_contact">
+    <div class="urmareste_footer">
+      <h3 class="titlu_facebook_footer">Urmărește-ne</h3>
+         <a href="https://www.facebook.com/hortimancrops94" target="_blank"><img src="images/facebook.png" alt="facebook"></a>  
+    </div>
+    <div class="contact_footer">
+      <div class="box1_contact">
+        <h3 class="titlu_contact_footer">Contact</h3>
+        <div class="box2_contact">
+          <div class="adresa">
+            <ul>
+              <li>
+                <img src="images/location.png" alt="adresa">
+              </li>
+              <li>
+                <p><b>Adresa:</b><br> Str. N. Bălcescu, Oraș Pogoanele, Jud. Buzău</p>
+              </li>
+            </ul>
+          </div>
+            <div class="telefon">
+            <ul>
+              <li>
+                <img src="images/phone1.png" alt="telefon">
+              </li>
+              <li>
+              <p><b>Telefon:</b><br> 0750 647 234</p>
+              </li>
+            </ul>
+          </div>
+          <div class="email">
+            <ul>
+              <li>
+                <img src="images/email.png" alt="email">
+              </li>
+              <li>
+              <p><b>Email:</b><br> office@hortimancrops.ro</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <p class="copy">&copy;Horti Man Crops 2023</p>
+</footer>
+
 </html>
