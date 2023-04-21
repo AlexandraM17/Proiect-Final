@@ -90,3 +90,186 @@ nav ul li a:hover {
     width: 95px;
     height: 95px;
 }
+
+.contact {
+    position: relative;
+}
+
+.container_contact {
+    width: 100%;
+}
+
+.sectiuni_contact {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.harta_contact {
+    filter: brightness(60%);
+}
+
+.formular_contact {
+    width: 800px;
+    height: 740px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px;
+}
+
+.formular_contact h2 {
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+    font-family: 'Blinker', sans-serif;
+    margin-bottom: 55px;
+}
+
+form {
+    position: relative;
+}
+
+.input_formular {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.input_date {
+    display: block;
+    width: 100%;
+    background: padding-box none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 13px 0;
+    line-height: 1.2;
+    font-size: 1.1rem;
+    color: white;
+    outline: 0;
+}
+
+.buton_formular {
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Blinker', sans-serif;
+    letter-spacing: 1px;
+    border: 3px solid #ffa01cda;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px 200px;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 60px;
+}
+
+.buton_formular:hover {
+    background-color:#ffa01cda ;
+}
+
+footer {
+    width: 100%;
+    height: 270px;
+    background-color: #ccc;
+}
+
+.sectiune_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+.titlu_facebook_footer {
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+.titlu_contact_footer {
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+.urmareste_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.urmareste_footer img {
+    width: 55px;
+    height: 55px;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.contact_footer img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact_footer {
+    margin-top: 2px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box1_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.box2_contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.copy {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#btn_top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+#btn {
+    display: block;
+    width: 44px;
+    height: 44px;
+    line-height: 42px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffa01cda;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+

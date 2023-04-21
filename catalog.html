@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="catalog.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="catalog.css"/>
     <title>Catalog</title>
 </head>
 <body>
@@ -42,13 +42,26 @@
         <section class="prezentare_catalog">
           <div class="box_ct">
             <div class="box">
-              <div class="box_section">
+              <!-- <div class="box_section">
                 <div class="bg_principal">
-                  <!-- <img src="images/catalog_img.jpg" alt="catalog img"> -->
+                  <img src="images/catalog_img.jpg" alt="catalog img">
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
+
+          <script>
+            const background =
+              document.getElementsByClassName('prezentare_catalog')[0];
+            if (background) {
+              window.addEventListener('scroll', function () {
+                console.log(window.pageYOffset);
+                background.style.backgroundPosition = `center ${
+                  window.pageYOffset * 0.8
+                }px`;
+              });
+            }
+            </script>
           <div class="container_prezentare_catalog">
             <div class="info_prezentare_catalog">
               <div>
@@ -77,6 +90,7 @@
               <span class="dot" onclick="currentSlide(2)"></span>
             </div>
           </div>
+
             <script>
               var slideIndex = 1;
               showSlides(slideIndex);
@@ -91,23 +105,33 @@
 
               function showSlides(n) {
                 let i;
-                let slides = document.getElementsByClassName("slides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
+                let slides = document.getElementsByClassName('slides');
+                let dots = document.getElementsByClassName('dot');
+                if (n > slides.length) {
+                  slideIndex = 1;
+                }
+                if (n < 1) {
+                  slideIndex = slides.length;
+                }
                 for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                slides[i].style.display = 'none';
                 }
                 for (i = 0; i < dots.length; i++) {
-                 dots[i].className = dots[i].className.replace(" active", "");
+                 dots[i].className = dots[i].className.replace(' active', '');
                 }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
+                slides[slideIndex - 1].style.display = 'block';
+                dots[slideIndex - 1].className += ' active';
               }
             </script>
-            <img class="img_prezentare_catalog" src="images/despre_noi_1.jpeg" alt="imagine catalog">
+
+            <img 
+            class="img_prezentare_catalog" 
+            src="images/despre_noi_1.jpeg" 
+            alt="imagine catalog"
+            />
           </div>
         </section>
+
         <section class="prezentare_produse_catalog">
           <div class="container_produse">
             <div class="produse_catalog">
@@ -126,19 +150,42 @@
             </div>
           </div>
         </section>
+        <section class="prezentare_verticala">
+          <div class="container_prezentare_verticala">
+            <div class="pv_produse">
+              <!-- <div class="prezentare_verticala_dr1">
+                <div class="prezentare_verticala_img">
+                  <img class="pv_img" src="images/pv_verde.jpeg" alt="pv pepene verde">
+                </div>
+                <div class="prezentare_verticala_text">
+                  <h3 class="pv_text">Răsad altoit</h3>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <section class="parteneri">
+          <h3>PARTENERI</h3>
+          <div class="parteneri_imagini">
+            <img style="width: 200px; height: 70px;" src="images/syngenta.png" alt="syngenta">
+            <img style="width: 200px; height: 100px;" src="images/mantzaris.jpg" alt="mantzaris">
+            <img style="width: 100px; height: 100px;" src="images/bayer.jpg" alt="bayer">
+            <img style="width: 110px; height: 100px;" src="images/corteva.jpg" alt="corteva">
+            <img style="width: 200px; height: 70px;" src="images/netafim.png" alt="netafim">
+          </div>
+        </section>
       </main>
-</body>
-<script>
-  fetch('data.json')
-  .then((data) => data.json())
-  .then(data => createItemCard(data))
-  .catch((err) => console.log(err));
+  <script>
+    fetch('data.json')
+    .then((data) => data.json())
+    .then(data => createItemCard(data))
+    .catch((err) => console.log(err));
 
-  function createItemCard(data) {
-    const zone = document.getElementsByClassName('items')[0];
-    for(let i = 0; i < data.length; i++) {
-      const item = document.createElement('div');
-      item.innerHTML = `<div class="item_1">
+    function createItemCard(data) {
+      const zone = document.getElementsByClassName('items')[0];
+      for (let i = 0; i < data.length; i++) {
+        const item = document.createElement('div');
+        item.innerHTML = `<div class="item_1">
                   <div class="img_item">
                     <img class="img_item" src=${data[i].imagine} alt="rasad">
                   </div>
@@ -148,10 +195,34 @@
                     <p class="p2_box_item">${data[i].descriere}</p>
                   </div>
                 </div>`;
-                zone.appendChild(item);
+        zone.appendChild(item);
+      }
+    }
+
+  </script>
+
+  <script>
+  fetch('dataPv.json') 
+  .then((data) => data.json())
+  .then(data => createPvCard(data))
+  .catch((err) => console.log(err));
+  function createPvCard(data) {
+    const zonePv = document.getElementsByClassName('pv_produse')[0];
+    for (let i = 0; i < data.length; i++) {
+      const itemPv = document.createElement('div');
+      itemPv.innerHTML = `<div class="prezentare_verticala_dr1">
+              <div class="prezentare_verticala_img">
+                <img class="pv_img" src=${data[i].imaginePv} alt="pv pepene verde">
+              </div>
+              <div class="prezentare_verticala_text">
+                <h3 class="pv_text">${data[i].textPv}</h3>
+              </div>
+            </div>`
+            zonePv.appendChild(itemPv);
     }
   }
-</script>
+  </script>
+
 <footer>
   <div class="sectiune_contact">
     <div class="urmareste_footer">
@@ -197,7 +268,12 @@
     </div>
   </div>
   <hr/>
-  <p class="copy">&copy;Horti Man Crops 2023</p>
+  <p class="copy">&copy; Horti Man Crops 2023</p>
 </footer>
-
+<div id="btn_top" style="display: block">
+  <a id="btn" href="/catalog.html">
+    <i class="arrow up"></i>
+  </a>
+</div>
+</body>
 </html>

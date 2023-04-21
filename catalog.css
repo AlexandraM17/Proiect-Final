@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-image:url('images/catalog_img.jpg');
+    /* background-image:url('images/catalog_img.jpg'); */
 }
 
 .header {
@@ -44,7 +44,8 @@ body {
     justify-content: space-between;
 }
 
-.top_bar_telefon, ul {
+.top_bar_telefon,
+ ul {
     margin: 0;
     gap: 10px;
     list-style-type: none;
@@ -95,6 +96,10 @@ nav ul li a:hover {
 
 .prezentare_catalog {
     margin-bottom: 80px;
+    background-image: url('images/catalog_img.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box_ct{
@@ -105,12 +110,12 @@ nav ul li a:hover {
 .box {
     height: 100%;
     overflow-x: hidden;
-    perspective: 1px;
+    /* perspective: 1px; */
 }
 
-.box::-webkit-scrollbar { 
+/* .box::-webkit-scrollbar { 
     display: none;  
-}
+} */
 
 .box_section {
     min-height: 100vh;
@@ -128,7 +133,7 @@ nav ul li a:hover {
     left: 0;
     top: 0;
     right: 0;
-    bottom:0;
+    bottom: 0;
     object-fit: cover;
     object-position: 50% 65%;
     background-position: center center;
@@ -196,13 +201,14 @@ nav ul li a:hover {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color:#ffa01cda ;
+    background-color: #ffa01cda;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+  .active, 
+  .dot:hover {
     background-color: #717171;
   }
 
@@ -211,7 +217,7 @@ nav ul li a:hover {
     background-color: white;
     position: relative;
     padding-top: 150px;
-    padding-bottom: 350px;
+    padding-bottom: 300px;
     z-index: 0;
 }
 
@@ -255,7 +261,7 @@ nav ul li a:hover {
 }
 
 .box_item {
-    position:absolute;
+    position: absolute;
     width: 250px;
     height: 220px;
     background-color: white;
@@ -265,7 +271,7 @@ nav ul li a:hover {
     align-items: center;
     margin-top: -50px;
     margin-left: 25px;
-    transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
 }
 
 .box_item:hover {
@@ -294,6 +300,93 @@ nav ul li a:hover {
     margin: 0 15px;
 }
 
+.prezentare_verticala {
+    position: relative;
+    z-index: 0;
+}
+
+.container_prezentare_verticala {
+    width: 100%;
+    margin-bottom: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.pv_produse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.prezentare_verticala_dr1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.prezentare_verticala img {
+    transition: transform 1s;
+    background-color: none;
+}
+
+.pv_img {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.pv_img:hover {
+    transform: scale(0.9); 
+}
+
+.prezentare_verticala_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pv_text {
+    font-family: 'Blinker', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+
+.parteneri {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteneri h3 {
+    font-family: 'Blinker', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color:#666666;
+}
+
+.parteneri_imagini {
+    margin: 0 150px;
+    gap: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.parteneri_imagini img{
+    height: 100px;
+}
+
 footer {
     width: 100%;
     height: 270px;
@@ -315,7 +408,7 @@ footer {
     padding: 20px 20px;
 }
 
-.titlu_contact_footer{
+.titlu_contact_footer {
     font-size: 25px;
     padding: 20px 20px;
 }
@@ -359,4 +452,38 @@ footer {
     font-size: 15px;
     font-weight: bold;
     text-align: center;
+}
+
+#btn_top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+#btn {
+    display: block;
+    width: 44px;
+    height: 44px;
+    line-height: 42px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffa01cda;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }

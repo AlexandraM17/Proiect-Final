@@ -1,0 +1,18 @@
+[
+    {
+        "imaginePv": "images/pv_verde.jpeg",
+        "textPv": "Pepene Verde"
+    },
+    {
+        "imaginePv": "images/pv_galben.jpeg",
+        "textPv": "Pepene Galben"
+    },
+    {
+        "imaginePv": "images/pv_ardei.jpeg",
+        "textPv": "Ardei"
+    },
+    {
+        "imaginePv": "images/pv_rosii.jpeg",
+        "textPv": "Roșii"
+    }
+]
