@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 
 html {
     height: 100%;
@@ -19,9 +18,9 @@ body {
 }
 
 .top_bar {
-    color: black;
-    background-size: 220px;
+    color: #000000;
     padding: 0 30px;
+    background-size: 220px;
     background-image: url(images/navbar.png);
     background-repeat: repeat-x;
     filter: grayscale(100%);
@@ -40,12 +39,12 @@ body {
 
 .top_bar_telefon, ul {
     margin: 0;
-    gap: 10px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 #phone {
@@ -58,11 +57,11 @@ nav {
 }
 
 nav ul {
-    gap: 5px;
     margin-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5px;
 }
 
 nav ul li {
@@ -71,8 +70,8 @@ nav ul li {
 
 nav ul li a {
     color: #137547;
-    font-family: 'Anton', sans-serif;
     font-size: 1em;
+    font-family: 'Anton', sans-serif;
     text-decoration: none;
     transition: font-size 1s;
 }
@@ -80,7 +79,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffa01cda;
     font-size: 1.2em;
-   
 }
 
 #logo {
@@ -89,15 +87,13 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 10%;
-   
+    padding-top: 10%; 
 }
 
 .sectiune_titlu_pagina {
     position: relative;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: baseline;
 }
 
@@ -105,29 +101,27 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(images/background.jpeg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url(images/background.jpeg);
     background-position: center;
+    background-repeat: no-repeat;
     filter: brightness(65%);
     z-index: -1000;   
 }
 
 .sectiune_titlu_pagina h1 {
-    font-family: 'Ruthie', cursive;
     color: #ffa01ce7;
     font-size: 160px;
+    font-family: 'Ruthie', cursive;
     margin-left: 120px;
     margin-top: 60px;
-    /* animation-name: titlu_h1;
-    animation-duration: 2s; */
 }
 
 .cerc2 {
     width: 150px;
     height: 150px;
+    border: 3px solid #ffffff;
     border-radius: 50%;
-    border: 3px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,22 +129,22 @@ main {
 }
 
 #btn_principal {
+    width: 100px;
+    height: 100px;
     font-weight: bolder;
     font-family: 'Blinker', sans-serif;
     letter-spacing: 1px;
+    text-align: center;
+    background-color:#ffa01cda;
     border: 3px solid #ffa01cda;
     border-radius: 50%;
-    background-color:#ffa01cda;
-    width: 100px;
-    height: 100px;
-    text-align: center;
     cursor: pointer;
     outline: 0;
     transition: font-size 1s;
 }
 
 #btn_principal a {
-    color: white;
+    color: #ffffff;
 }
 
 #btn_principal:hover {
@@ -163,9 +157,9 @@ main {
 }
 
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
     display: inline-block;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
     padding: 3px;
 }
 
@@ -182,12 +176,12 @@ main {
 }
 
 .mini_sectiune1 {
-    display: block;
     position: relative;
-    overflow: hidden;
+    display: block;
+    color: #ffffff;
     text-align: center;
-    color: white;
     margin-top: -100px;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -200,9 +194,9 @@ main {
 
 .mini_sectiune1_text {
     position: absolute;
+    width: 500px;
     top: 50%;
     left: 50%;
-    width: 500px;
     transform: translate(-50%, -50%);
 }
 
@@ -212,10 +206,10 @@ main {
 }
 
 .mini_sectiune2 {
-    display: block;
     position: relative;
+    display: block;
+    color: #ffffff;
     text-align: center;
-    color: white;
     margin-right: -90px;
     z-index: 1;
 }
@@ -240,19 +234,19 @@ main {
 }
 
 .sectiune_prezentare_pagina {
+    width: 100%;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 750px;
 }
 
 .sp_background {
-    width: 1500px;
-    filter: opacity(0.2);
     position: absolute;
+    width: 1500px;
     text-align: center;
+    filter: opacity(0.2);
 }
 
 .sp {
@@ -260,25 +254,24 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 15%;
     align-items: center;
+    gap: 15%;
 }
 
 .soiuri_si_produse {
-    font-family: 'Ruthie', cursive;
-    font-size: 100px;
     color: #5c5c5c;
+    font-size: 100px;
+    font-family: 'Ruthie', cursive;
+    text-align: center;
     line-height: 80px;
     margin-right: 100px;
-    text-align: center;
 }
 
 .prezentare_produse {
-    gap: 20%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    gap: 20%;
 }
 
 .produs {
@@ -293,10 +286,10 @@ main {
     --b: 8px;     
     --g: 14px;    
     --c: #ffa01cda;
-    border-radius: 50%; 
     width: var(--s);
+    border-radius: 50%; 
     aspect-ratio: 1;
-    outline: calc(var(--s)/2) solid rgba(0, 0, 0, 0.479);
+    outline: calc(var(--s)/2) solid #0000007a;
     outline-offset: calc(var(--s)/-2);
     transition: 0.3s;
 }
@@ -307,19 +300,19 @@ main {
 }
 
 .descriere_produs {
-    color: black;
+    color: #000000;
     font-size: 19px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.9px;
     text-align-last: center;
     text-decoration: none;
-    letter-spacing: 0.9px;
     opacity: 60%;
 }
 
 .produs a {
-    margin-top: 30px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .produs a:link {
@@ -333,17 +326,17 @@ main {
 }
 
 .popup .popuptext {
-    visibility: hidden;
-    width: 500px;
-    background-color: #1375477a;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
     position: absolute;
-    z-index: 1;
-    bottom: 125%;
+    width: 500px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1375477a;
+    visibility: hidden;
+    border-radius: 6px;
     margin-left: -168px;
+    padding: 8px 0;
+    bottom: 125%;
+    z-index: 1;
 }
 
 .popup .popuptext::after {
@@ -372,11 +365,11 @@ main {
 }
 
 .despre_noi_imagini {
-    color: #F1F1F2;
-    width: 70%;
     position: relative;
+    width: 70%;
+    color: #F1F1F2;
+    box-shadow: 0px 0px 40px 20px #00000038;
     border-radius: 0 20px 20px 0;
-    box-shadow: 0px 0px 40px 20px rgba(0,0,0,0.22);
 }
 
 
@@ -387,50 +380,49 @@ main {
 }
 
 .despre_noi_informatii {
+    position: relative;
+    width: 50%;
+    top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 50%;
-    top: 40px;
-    position: relative;
-    box-shadow: 0 8px 32px 0 rgba(18, 31, 59, 0.37);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    box-shadow: 0 8px 32px 0 #121f3b5e;
     border-radius: 20px 0 0 20px;
 }
 
 .despre_noi_informatii p {
     height: 10px;
     width: 300px;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
     font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;  
     word-spacing: 3px;
-    opacity: 60%;
-    padding-bottom: 150px;
-    padding-left: 40px;
-    padding-right: 60px;
     display: flex;
     text-align: center;
     flex-direction: row; 
     flex-wrap: wrap;
-    align-content: flex-start;   
+    align-content: flex-start; 
+    padding-bottom: 150px;
+    padding-left: 40px;
+    padding-right: 60px; 
+    opacity: 60%; 
 }
 
 .descopera {
     width: 140px;
     height: 50px;
+    background-color: #ffffff;
     border: 3px solid #ffa01ce0; 
     border-radius: 30px;
-    background-color: white;
 }
+
 .descopera a {
+    color: #137547;
+    font-size: 14px;
     font-weight: bolder;
     letter-spacing: 1px;
-    font-size: 14px;
-    color: #137547;
     text-decoration: none;
 }
 
@@ -440,28 +432,28 @@ main {
 
 
 .parteneri {
-    margin-top: 100px;
-    margin-bottom: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .parteneri h3 {
+    color:#666666;
+    font-size: 40px;
     font-family: 'Blinker', sans-serif;
     font-weight: bolder;
-    font-size: 40px;
-    color:#666666;
 }
 
 .parteneri_imagini {
-    margin: 0 150px;
-    gap: 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 35px;
+    margin: 0 150px;
 }
 
 .parteneri_imagini img{
@@ -472,14 +464,13 @@ main {
 footer {
     width: 100%;
     height: 270px;
-    background-color: #ccc;
+    background-color: #cccccc;
 }
 
 .sectiune_contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 30px;
@@ -513,11 +504,11 @@ footer {
 }
 
 .contact_footer {
-    margin-top: 2px;
-    padding-left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 2px;
+    padding-left: 40px;
 }
 
 .box1_contact {
@@ -547,27 +538,39 @@ footer {
     display: block;
     width: 44px;
     height: 44px;
-    line-height: 42px;
+    color: #ffffff;
     font-size: 20px;
-    border-radius: 50%;
-    color: #fff;
     text-align: center;
     text-decoration: none;
+    line-height: 42px;
     background-color: #ffa01cda;
+    border-radius: 50%;
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
 
 .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
     display: inline-block;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
     padding: 3px;
 }
 
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @-webkit-keyframes fadeIn {
@@ -579,17 +582,3 @@ footer {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-
-/* @keyframes titlu_h1 {
-    0% {
-      transform: scale(0.1);
-      opacity: 0;
-    }
-    60% {
-      transform: scale(1.2);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-    }
-} */

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
@@ -23,7 +20,6 @@ body {
 
 .top_bar {
     color: #ffa01cda;
-    padding: 0 30px;
     background-size: 220px;
     background-image: url(images/navbar.png);
     background-repeat: repeat-x;
@@ -31,12 +27,11 @@ body {
     filter: grayscale(100%);
 }
 
-
 .nume_si_telefon {
     color: #484747;
-    font-weight: bold;
-    font-family: 'Prata', serif;
     font-size: 11px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
     display: flex;
     flex-direction:row; 
     justify-content: space-between;
@@ -44,12 +39,12 @@ body {
 
 .top_bar_telefon, ul {
     margin: 0;
-    gap: 10px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 #phone {
@@ -62,11 +57,11 @@ nav {
 }
 
 nav ul {
-    gap: 5px;
-    margin-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5px;
+    margin-right: 5%;
 }
 
 nav ul li {
@@ -75,8 +70,8 @@ nav ul li {
 
 nav ul li a {
     color: #137547;
-    font-family: 'Anton', sans-serif;
     font-size: 1em;
+    font-family: 'Anton', sans-serif;
     text-decoration: none;
     transition: font-size 1s;
 }
@@ -94,11 +89,11 @@ nav ul li a:hover {
 main {
     position: relative;
     width: 100%;
-    padding-top: 4%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3%;
 }
 
 .decoratiuni {
@@ -108,9 +103,9 @@ main {
     flex-direction: row;
     gap: 50px;
     margin-left: -250px;
-    margin-bottom: -100px;
     z-index: -1;
 }
+
 .decoratiune1 {
     width: 50%;
     height: 800px;
@@ -129,22 +124,22 @@ main {
 .sectiune1_despre_noi {
     width: 50%;
     height: 500px;
-    margin-bottom: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 170px;
 } 
 
 .sectiune_titlu { 
     height: 400px;
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
     box-shadow: 0px 0px 20px 0px #838c86;
-    margin-left: -140px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: -140px;
 }
 
 .sectiune_titlu h4 {
@@ -158,8 +153,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-left: 3px solid #00000044;
     margin-left: 20px;
-    border-left: 3px solid rgba(0, 0, 0, 0.265);
+    
 }
 
 .sectiune_info p {
@@ -175,10 +171,10 @@ main {
 .sectiune_info button {
     width: 180px;
     height: 40px;
-    margin-top: 30px;
-    border: none;
     background-color: #137547;
     box-shadow: 0 10px 10px #749687;
+    border: none;
+    margin-top: 30px;
     transition: font-size 1s;
 }
 
@@ -188,7 +184,7 @@ main {
 }
 
 .sectiune_info button a {
-    color: white;
+    color: #ffffff;
     font-size: 15px;
     font-family: 'Prata', serif;
     letter-spacing: 1px;
@@ -201,16 +197,21 @@ main {
 .detalii1 {
     width: 1000px;
     height: 300px;
-    padding-bottom: 120px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    padding-bottom: 120px;
 }
 
+.detalii1 img {
+    position: relative;
+    width: 700px;
+    height: 300px;
+}
 
 .ce_ne_recomanda_titlu {
-    color: black;
+    color: #000000;
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -230,66 +231,63 @@ main {
     margin-bottom: 40px;
 }
 
-.detalii1 img {
-    width: 700px;
-    height: 300px;
-    position: relative;
-}
-
 .detalii2 {
     width: 1000px;
     height: 300px;
-    padding-top: 100px;
-    padding-bottom: 150px;
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
+    padding-bottom: 120px;
 }
 
+.detalii2 img {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin-left: 100px;
+}
 
 .principii_titlu {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    color: black;
+    color: #000000;
     font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 
 .principii_text {
-    color: #666666;
-    font-family: 'Blinker', sans-serif;
-    font-size: 18px;
     display: inline-block;
+    color: #666666;
+    font-size: 18px;
+    font-family: 'Blinker', sans-serif;
 }
 
 .principii h4 {
     color: #ffa01cda;
-    font-family: 'Blinker', sans-serif;
     font-size: 18px;
-    text-align: center;
-    padding: 10px 10px;
+    font-family: 'Blinker', sans-serif;
     text-align: center;
     border: 2px solid #137547; 
     border-radius: 30px;
-}
-
-
-.detalii2 img {
-    width: 700px;
-    height: 500px;
-    position: relative;
-    margin-left: 100px;
+    padding: 10px 10px;
 }
 
 .detalii3 {
     width: 1000px;
     height: 300px;
-    padding-top: 100px;
-    padding-bottom: 150px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.detalii3 img {
+    position: relative;
+    width: 350px;
+    height: 300px;
 }
 
 .magazin {
@@ -299,20 +297,20 @@ main {
 }
 
 .magazin h3 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
     color: #137547;
     font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
     margin-top: -20px;
     margin-left: 40px;
 }
 
 .magazin p {
     color: #666666;
-    font-family: 'Blinker', sans-serif;
-    word-spacing: 1px;
-    letter-spacing: 1px;
     font-size: 15px;
+    font-family: 'Blinker', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
     text-align: justify;
     margin-left: 40px;
     margin-right: 40px;
@@ -322,17 +320,17 @@ main {
 .magazin button {
     width: 140px;
     height: 50px;
+    background-color: #ffffff;
     border: 3px solid #ffa01ce0; 
     border-radius: 30px;
-    background-color: white;
     margin-left: 35px;
 }
 
 .magazin button a {
+    color: #137547;
+    font-size: 13px;
     font-weight: bolder;
     letter-spacing: 1px;
-    font-size: 13px;
-    color: #137547;
     text-decoration: none;
     transition: font-size 1s;
 }
@@ -341,34 +339,27 @@ main {
     background-color: #ffa01ce0;
 }
 
-.detalii3 img {
-    width: 350px;
-    height: 300px;
-    position: relative;
-}
-
 .cronologie {
-    background-color: #ffa01cda;
     height: 700px;
+    background-color: #ffa01cda;
 }
 
 .cronologie_titlu {
     font-size: 40px;
+    font-family: 'Blinker', sans-serif;
     word-spacing: 5px;
     text-align: justify;
     margin-top: 80px;
     margin-bottom: 40px;
     margin-left: 180px;
-    font-family: 'Blinker', sans-serif;
-
 }
 
 .container_cronologie {
     height: 350px;
-    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .cronologie_line {
@@ -386,16 +377,16 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0 180px;
     gap: 230px;
+    padding: 0 180px;
 }
 
 
 .c_box h1 {
     color: #cccccc;
-    font-weight: bolder;
-    font-family: 'Blinker', sans-serif;
     font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Blinker', sans-serif;  
 }
 
 
@@ -405,47 +396,45 @@ main {
 
 .c_box p {
     text-align: justify;
-    font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     letter-spacing: 1px;
     font-size: 15px;
 }
 
-
 .parteneri {
-    margin-top: 100px;
-    margin-bottom: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .parteneri h3 {
-    font-family: 'Blinker', sans-serif;
-    font-weight: bolder;
-    font-size: 40px;
     color:#666666;
+    font-size: 40px;
+    font-family: 'Blinker', sans-serif;
+    font-weight: bolder; 
 }
 
 .parteneri_imagini {
-    margin: 0 150px;
-    gap: 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 35px;
+    margin: 0 150px;
 }
 
-.parteneri_imagini img{
+.parteneri_imagini img {
     height: 100px;
 }
 
 footer {
     width: 100%;
     height: 270px;
-    background-color: #ccc;
+    background-color: #cccccc;
 }
 
 .sectiune_contact {
@@ -486,11 +475,11 @@ footer {
 }
 
 .contact_footer {
-    margin-top: 2px;
-    padding-left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 2px;
+    padding-left: 40px;
 }
 
 .box1_contact {
@@ -520,21 +509,33 @@ footer {
     display: block;
     width: 44px;
     height: 44px;
-    line-height: 42px;
+    color: #ffffff;
     font-size: 20px;
-    border-radius: 50%;
-    color: #fff;
     text-align: center;
     text-decoration: none;
+    line-height: 42px;
     background-color: #ffa01cda;
+    border-radius: 50%;
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
     display: inline-block;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
     padding: 3px;
 }
 

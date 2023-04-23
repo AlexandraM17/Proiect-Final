@@ -12,8 +12,8 @@
         <div class="nume_si_telefon">
             <p>Horti Man Crops</p>
           <div class="top_bar_telefon">
-                <img src="images/phone.png" alt="phone" id="phone">
-                <p class="telefon">0750 647 234</p>
+            <img src="images/phone.png" alt="phone" id="phone"/>
+            <p class="telefon">0750 647 234</p>
           </div>
         </div>
       </div>
@@ -26,7 +26,9 @@
             <a href="/desprenoi.html">DESPRE NOI</a>
           </li>
           <li>
-            <a href="/index.html"><img src="images/logo.jpeg" alt="logo" id="logo"/></a>
+            <a href="/index.html">
+              <img src="images/logo.jpeg" alt="logo" id="logo"/>
+            </a>
           </li>
           <li>
             <a href="/catalog.html">CATALOG</a>
@@ -41,16 +43,20 @@
       <section class="sectiune_titlu_pagina">
         <div class="background_titlu_pagina"></div>
         <h1>Horti <br> Man Crops</h1>
-        <div class="cerc2">
+        <div class="cerc2 reveal">
           <div id="btn_principal" onclick="navigateToShop()">
-            <p><i class="arrow right"></i></p>
-            <span class="noselect"><a href="https://hortimancrops.ro/" target="_blank"></a></span>
+            <p>
+              <i class="arrow right"></i>
+            </p>
+            <span class="noselect">
+              <a href="https://hortimancrops.ro/" target="_blank"></a>
+            </span>
           </div>
         </div>
       </section>
-      <section class="mini_sectiuni">
+      <section class="mini_sectiuni reveal">
         <div class="mini_sectiune1">
-          <img src="images/mini_sectiune1.jpeg" alt="verde si galben">
+          <img src="images/mini_sectiune1.jpeg" alt="verde si galben"/>
           <div class="mini_sectiune1_text">
             <p>Răsad altoit pepene <br>
               <span style="color: #137547; font-family: 'Ruthie', cursive; font-size: 80px;"> verde </span>  și  
@@ -59,7 +65,7 @@
           </div>
         </div>
         <div class="mini_sectiune2">
-          <img src="images/mini_sectiune2.jpeg" alt="legume">
+          <img src="images/mini_sectiune2.jpeg" alt="legume"/>
           <div class="mini_sectiune2_text">
             <p>Răsad 
               <span style="font-family: 'Ruthie', cursive; font-size: 80px;"> legume </span>
@@ -68,14 +74,14 @@
         </div>
       </section>
       <section class="sectiune_prezentare_pagina">
-        <img  class="sp_background" src="images/sp_background.png" alt="sp sp_background">
+        <img  class="sp_background" src="images/sp_background.png" alt="sp sp_background"/>
         <div class="sp">
           <h1 class="soiuri_si_produse">
             <span style="color: #ffa01cda">Soiuri</span>
             <br> și <br>
             <span style="color: #137547">Produse</span> 
           </h1>
-          <div class="prezentare_produse">
+          <div class="prezentare_produse reveal">
             <div class="produs">
               <div class="popup" onclick="pFunction()">
                 <span class="popuptext" id="myPopup">
@@ -88,18 +94,22 @@
                   <h3>Pepene Cu Miez Galben:</h3>
                   <p>YellowBiteF1 | PeaceF1</p>
                 </span>
-                <img src="images/produs1.jpeg" alt="pepene_verde">
+                <img src="images/produs1.jpeg" alt="pepene_verde"/>
               </div>
-              <a href="/catalog.html"><span class="descriere_produs">Răsaduri altoite <br> pepene verde</span></a>
+              <a href="/catalog.html">
+                <span class="descriere_produs">Răsaduri altoite <br> pepene verde</span>
+              </a>
             </div>
             <div class="produs">
               <div class="popup" onclick="p1Function()">
                 <span class="popuptext" id="myPopup1">
                   <p>RaymondF1 | JucarF1 | KarpatosF1 | GaramF1 | FlanderF1 | KemerF1</p>
                 </span>
-                <img src="images/produs2.jpeg" alt="pepene_galben">
+                <img src="images/produs2.jpeg" alt="pepene_galben"/>
               </div>
-              <a href="/catalog.html"><span class="descriere_produs">Răsaduri altoite <br> pepene galben</span></a>
+              <a href="/catalog.html">
+                <span class="descriere_produs">Răsaduri altoite <br> pepene galben</span>
+              </a>
             </div>
             <div class="produs">
               <div class="popup" onclick="p2Function()">
@@ -113,28 +123,16 @@
                   <h3>Castraveți:</h3>
                   <p>CornichonF1</p>
                 </span>
-                <img src="images/produs3.jpeg" alt="legume">
+                <img src="images/produs3.jpeg" alt="legume"/>
               </div>
-              <a href="/catalog.html"><span class="descriere_produs">Răsaduri<br>legume</span></a>
+              <a href="/catalog.html">
+                <span class="descriere_produs">Răsaduri<br>legume</span>
+              </a>
             </div>
-            <script>
-              function pFunction() {
-                var popup = document.getElementById("myPopup");
-                popup.classList.toggle("show");
-              }
-              function p1Function() {
-                var popup = document.getElementById("myPopup1");
-                popup.classList.toggle("show");
-              }
-              function p2Function() {
-                var popup = document.getElementById("myPopup2");
-                popup.classList.toggle("show");
-              }
-              </script>
           </div>
         </div>
       </section>
-      <section>
+      <section class="reveal">
         <div class="despre_noi">
           <div class="despre_noi_informatii">
             <p>
@@ -147,48 +145,82 @@
             </button>
           </div>
           <div class="despre_noi_imagini">
-            <img class="slides" src="images/despre_noi_1.jpeg" alt="imagine1">
-            <img class="slides" src="images/despre_noi_2.jpeg" alt="imagine2">
-            <img class="slides" src="images/despre_noi_3.jpeg" alt="imagine3">
-            <img class="slides" src="images/despre_noi_4.jpeg" alt="imagine4">
-            <script> 
-              var slideIndex = 0;
-              carousel();
-                
-              function carousel() {
-                var x = document.getElementsByClassName("slides");
-                for (let i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 2000); 
-              }
-
-              function navigateToShop() {
-                window.open("https://hortimancrops.ro/", "_blank")
-              }
-            </script>
+            <img class="slides" src="images/despre_noi_1.jpeg" alt="imagine1"/>
+            <img class="slides" src="images/despre_noi_2.jpeg" alt="imagine2"/>
+            <img class="slides" src="images/despre_noi_3.jpeg" alt="imagine3"/>
+            <img class="slides" src="images/despre_noi_4.jpeg" alt="imagine4"/>
           </div>
         </div>
       </section>
-      <section class="parteneri">
+      <section class="parteneri reveal">
         <h3>PARTENERI</h3>
         <div class="parteneri_imagini">
-          <img style="width: 200px; height: 70px;" src="images/syngenta.png" alt="syngenta">
-          <img style="width: 200px; height: 100px;" src="images/mantzaris.jpg" alt="mantzaris">
-          <img style="width: 100px; height: 100px;" src="images/bayer.jpg" alt="bayer">
-          <img style="width: 110px; height: 100px;" src="images/corteva.jpg" alt="corteva">
-          <img style="width: 200px; height: 70px;" src="images/netafim.png" alt="netafim">
+          <img style="width: 200px; height: 70px;" src="images/syngenta.png" alt="syngenta"/>
+          <img style="width: 200px; height: 100px;" src="images/mantzaris.jpg" alt="mantzaris"/>
+          <img style="width: 100px; height: 100px;" src="images/bayer.jpg" alt="bayer"/>
+          <img style="width: 110px; height: 100px;" src="images/corteva.jpg" alt="corteva"/>
+          <img style="width: 200px; height: 70px;" src="images/netafim.png" alt="netafim"/>
         </div>
       </section>
     </main>
+    <script>
+      function pFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      function p1Function() {
+        var popup = document.getElementById("myPopup1");
+        popup.classList.toggle("show");
+      }
+      function p2Function() {
+        var popup = document.getElementById("myPopup2");
+        popup.classList.toggle("show");
+      }
+    </script>
+    <script> 
+      var slideIndex = 0;
+      carousel();
+        
+      function carousel() {
+        var x = document.getElementsByClassName("slides");
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); 
+      }
+
+      function navigateToShop() {
+        window.open("https://hortimancrops.ro/", "_blank")
+      }
+    </script>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    </script>
     <footer>
         <div class="sectiune_contact">
           <div class="urmareste_footer">
             <h3 class="titlu_facebook_footer">Urmărește-ne</h3>
-               <a href="https://www.facebook.com/hortimancrops94" target="_blank"><img src="images/facebook.png" alt="facebook"></a>  
+              <a href="https://www.facebook.com/hortimancrops94" target="_blank">
+                <img src="images/facebook.png" alt="facebook"/>
+              </a>  
           </div>
           <div class="contact_footer">
             <div class="box1_contact">
@@ -197,30 +229,38 @@
                 <div class="adresa">
                   <ul>
                     <li>
-                      <img src="images/location.png" alt="adresa">
+                      <img src="images/location.png" alt="adresa"/>
                     </li>
                     <li>
-                      <p><b>Adresa:</b><br> Str. N. Bălcescu, Oraș Pogoanele, Jud. Buzău</p>
+                      <p>
+                        <b>Adresa:</b><br> Str. N. Bălcescu, Oraș Pogoanele, Jud. Buzău
+                      </p>
                     </li>
                   </ul>
                 </div>
                   <div class="telefon">
                   <ul>
                     <li>
-                      <img src="images/phone1.png" alt="telefon">
+                      <img src="images/phone1.png" alt="telefon"/>
                     </li>
                     <li>
-                    <p><b>Telefon:</b><br> 0750 647 234</p>
+                      <p>
+                        <b>Telefon:</b>
+                        <br> 0750 647 234
+                      </p>
                     </li>
                   </ul>
                 </div>
                 <div class="email">
                   <ul>
                     <li>
-                      <img src="images/email.png" alt="email">
+                      <img src="images/email.png" alt="email"/>
                     </li>
                     <li>
-                    <p><b>Email:</b><br> office@hortimancrops.ro</p>
+                      <p>
+                        <b>Email:</b>
+                        <br> office@hortimancrops.ro
+                      </p>
                     </li>
                   </ul>
                 </div>
