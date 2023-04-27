@@ -154,18 +154,8 @@ main {
 
 #btn_principal p {
     padding-top: 25px;
-}
-
-.arrow {
-    display: inline-block;
-    border: solid #000000;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
-}
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
 }
 
 .mini_sectiuni {
