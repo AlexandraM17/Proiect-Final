@@ -1,3 +1,3 @@
 # Curs Git
 
-Acesta este cursul de git
+Pagină de prezentare a companiei Horti Man Crops. 
